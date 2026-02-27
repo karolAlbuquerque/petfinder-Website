@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF5722" />
+
+  <!-- SEO -->
+  <title>PetFinder – Encontre Pets Perdidos</title>
+  <meta name="description" content="PetFinder é o app que conecta pessoas para ajudar pets perdidos a voltarem para casa. Registre, encontre e colabore com a sua comunidade." />
+  <meta name="keywords" content="pet perdido, encontrar pet, cachorro perdido, gato perdido, app pet, PetFinder" />
+  <link rel="canonical" href="https://petfinderapp.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://petfinderapp.com.br/" />
+  <meta property="og:title" content="PetFinder – Encontre Pets Perdidos" />
+  <meta property="og:description" content="O app que conecta pessoas para ajudar pets perdidos a voltarem para casa." />
+  <meta property="og:image" content="https://petfinderapp.com.br/assets/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PetFinder – Encontre Pets Perdidos" />
+  <meta name="twitter:description" content="O app que conecta pessoas para ajudar pets perdidos a voltarem para casa." />
+  <meta name="twitter:image" content="https://petfinderapp.com.br/assets/og-image.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="PetFinder – Início">
+        <img src="assets/logo.svg" alt="PetFinder" width="40" height="40" />
+        <span>PetFinder</span>
+      </a>
+      <nav class="navbar__links" id="navLinks" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download" class="btn btn--blue btn--sm">Baixar App</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-shapes" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+        <div class="shape shape--3"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__logo-wrap">
+          <img src="assets/logo.svg" alt="PetFinder Logo" width="100" height="100" class="hero__logo" />
+        </div>
+        <h1 class="hero__title">Bem-vindo ao <span class="text--orange">PetFinder</span></h1>
+        <p class="hero__subtitle">Aumente as chances de reencontrar um pet perdido.<br>Conectamos pessoas que se importam com os animais da nossa comunidade.</p>
+        <div class="hero__actions">
+          <a href="#download" class="btn btn--orange btn--lg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="currentColor"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5l-5-5 1.41-1.41L12 13.67l7.59-7.59L21 7.5l-8 9z" fill="currentColor"/></svg>
+            Perdi um Pet
+          </a>
+          <a href="#download" class="btn btn--green btn--lg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/></svg>
+            Encontrei um Pet
+          </a>
+        </div>
+        <a href="#download" class="btn btn--blue btn--md hero__btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/></svg>
+          Ver Todos os Pets
+        </a>
+        <p class="hero__note">Disponível em breve na Google Play · Gratuito</p>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Nossa missão</span>
+          <h2 class="section-title">Por que o PetFinder existe?</h2>
+          <p class="section-desc">Pets se perdem todos os dias. A diferença entre reencontrar ou não pode ser apenas uma questão de tempo e de pessoas conectadas.</p>
+        </div>
+        <div class="sobre__grid">
+          <div class="sobre__card">
+            <div class="sobre__icon sobre__icon--orange" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
+            </div>
+            <h3>O problema</h3>
+            <p>Milhares de pets se perdem anualmente no Brasil. Sem uma ferramenta centralizada, as buscas ficam espalhadas em grupos de redes sociais e cartazes físicos — lentos e ineficientes.</p>
+          </div>
+          <div class="sobre__card sobre__card--highlight">
+            <div class="sobre__icon sobre__icon--green" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/></svg>
+            </div>
+            <h3>A solução</h3>
+            <p>O PetFinder conecta quem perdeu um pet com quem encontrou, usando geolocalização e fotos em tempo real. Uma comunidade unida pelo amor aos animais.</p>
+          </div>
+          <div class="sobre__card">
+            <div class="sobre__icon sobre__icon--blue" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" fill="currentColor"/></svg>
+            </div>
+            <h3>Comunidade</h3>
+            <p>Cada registro ajuda não só um tutor, mas toda a vizinhança. Quanto mais pessoas usam, mais forte fica a rede de proteção para os pets da sua cidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMO FUNCIONA ========== -->
+    <section class="como-funciona" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simples assim</span>
+          <h2 class="section-title">Como funciona em 3 passos</h2>
+          <p class="section-desc">Em poucos minutos você já está contribuindo para que um pet volte para casa.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__number step__number--orange">1</div>
+            <div class="step__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" fill="#FF5722"/></svg>
+            </div>
+            <h3 class="step__title">Escolha a situação</h3>
+            <p class="step__desc">Selecione <strong class="text--orange">"Perdi um Pet"</strong> ou <strong class="text--green">"Encontrei um Pet"</strong> e preencha as informações básicas: espécie, raça, cor e uma foto.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true"></div>
+          <div class="step">
+            <div class="step__number step__number--green">2</div>
+            <div class="step__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#4CAF50"/></svg>
+            </div>
+            <h3 class="step__title">Marque no mapa</h3>
+            <p class="step__desc">Indique o local onde o pet foi visto pela última vez ou onde foi encontrado. O mapa interativo facilita a busca por proximidade.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true"></div>
+          <div class="step">
+            <div class="step__number step__number--blue">3</div>
+            <div class="step__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" fill="#2F80ED"/></svg>
+            </div>
+            <h3 class="step__title">Conecte-se</h3>
+            <p class="step__desc">Outros usuários próximos são notificados. Quem tiver informações entra em contato diretamente pelo app, aumentando as chances de reencontro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RECURSOS ========== -->
+    <section class="recursos" id="recursos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Funcionalidades</span>
+          <h2 class="section-title">Tudo que você precisa em um só lugar</h2>
+          <p class="section-desc">O PetFinder foi pensado para ser simples de usar e poderoso o suficiente para fazer a diferença.</p>
+        </div>
+        <div class="recursos__grid">
+
+          <div class="recurso-card">
+            <div class="recurso-card__icon recurso-card__icon--orange" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="currentColor"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z" fill="currentColor"/></svg>
+            </div>
+            <h3>Pet Perdido</h3>
+            <p>Registre rapidamente um pet desaparecido com foto, descrição e localização. Quanto mais rápido o registro, maiores as chances.</p>
+            <span class="recurso-card__badge recurso-card__badge--orange">Urgente</span>
+          </div>
+
+          <div class="recurso-card">
+            <div class="recurso-card__icon recurso-card__icon--green" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/></svg>
+            </div>
+            <h3>Pet Encontrado</h3>
+            <p>Encontrou um pet na rua? Registre agora e ajude o tutor a localizá-lo. Sua ação pode mudar a história de uma família.</p>
+            <span class="recurso-card__badge recurso-card__badge--green">Ajudar</span>
+          </div>
+
+          <div class="recurso-card">
+            <div class="recurso-card__icon recurso-card__icon--blue" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
+            </div>
+            <h3>Mapa Interativo</h3>
+            <p>Visualize todos os pets próximos a você no mapa em tempo real. Filtre por espécie, data e raio de distância.</p>
+            <span class="recurso-card__badge recurso-card__badge--blue">Localizar</span>
+          </div>
+
+          <div class="recurso-card">
+            <div class="recurso-card__icon recurso-card__icon--orange" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" fill="currentColor"/></svg>
+            </div>
+            <h3>Upload de Fotos</h3>
+            <p>Adicione fotos do pet diretamente pelo celular. Imagens aumentam muito as chances de reconhecimento pela comunidade.</p>
+            <span class="recurso-card__badge recurso-card__badge--orange">Visual</span>
+          </div>
+
+          <div class="recurso-card">
+            <div class="recurso-card__icon recurso-card__icon--green" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z" fill="currentColor"/></svg>
+            </div>
+            <h3>Listagem Completa</h3>
+            <p>Navegue por todos os pets cadastrados com filtros inteligentes. Veja os mais recentes, os mais próximos ou busque por características.</p>
+            <span class="recurso-card__badge recurso-card__badge--green">Explorar</span>
+          </div>
+
+          <div class="recurso-card">
+            <div class="recurso-card__icon recurso-card__icon--blue" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" fill="currentColor"/></svg>
+            </div>
+            <h3>Login Seguro</h3>
+            <p>Suas sessões são protegidas com tokens seguros (JWT), garantindo que apenas você acesse sua conta. Seus dados ficam sempre protegidos.</p>
+            <span class="recurso-card__badge recurso-card__badge--blue">Seguro</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SCREENSHOTS ========== -->
+    <section class="screenshots" id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">O app em ação</span>
+          <h2 class="section-title">Veja como é simples usar</h2>
+          <p class="section-desc">Interface limpa e intuitiva, pensada para funcionar bem em qualquer momento — especialmente nos mais urgentes.</p>
+        </div>
+        <div class="screenshots__grid">
+
+          <div class="phone-mockup">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen phone-mockup__screen--home">
+                <div class="mock-screen">
+                  <div class="mock-header">
+                    <div class="mock-logo-small"></div>
+                    <span>PetFinder</span>
+                  </div>
+                  <div class="mock-btn mock-btn--orange">Perdi um Pet</div>
+                  <div class="mock-btn mock-btn--green">Encontrei um Pet</div>
+                  <div class="mock-btn mock-btn--blue">Ver Todos os Pets</div>
+                  <div class="mock-stats">
+                    <div class="mock-stat"><strong>128</strong><span>Perdidos</span></div>
+                    <div class="mock-stat"><strong>94</strong><span>Encontrados</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="phone-mockup__label">Tela Inicial</p>
+          </div>
+
+          <div class="phone-mockup">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen phone-mockup__screen--register">
+                <div class="mock-screen">
+                  <div class="mock-header mock-header--back">
+                    <span class="mock-back">←</span>
+                    <span>Registrar Pet</span>
+                  </div>
+                  <div class="mock-photo-upload">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" fill="#aaa"/></svg>
+                    <span>Adicionar foto</span>
+                  </div>
+                  <div class="mock-field">Nome do pet</div>
+                  <div class="mock-field">Espécie</div>
+                  <div class="mock-field">Raça / Cor</div>
+                  <div class="mock-btn mock-btn--orange mock-btn--sm">Salvar Registro</div>
+                </div>
+              </div>
+            </div>
+            <p class="phone-mockup__label">Registro de Pet</p>
+          </div>
+
+          <div class="phone-mockup">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen phone-mockup__screen--map">
+                <div class="mock-screen">
+                  <div class="mock-header mock-header--back">
+                    <span class="mock-back">←</span>
+                    <span>Mapa</span>
+                  </div>
+                  <div class="mock-map">
+                    <div class="mock-map__bg"></div>
+                    <div class="mock-pin mock-pin--orange" style="top:35%;left:40%"></div>
+                    <div class="mock-pin mock-pin--green" style="top:55%;left:60%"></div>
+                    <div class="mock-pin mock-pin--orange" style="top:25%;left:65%"></div>
+                    <div class="mock-pin mock-pin--green" style="top:65%;left:30%"></div>
+                  </div>
+                  <div class="mock-legend">
+                    <span class="mock-legend__item mock-legend__item--orange">Perdido</span>
+                    <span class="mock-legend__item mock-legend__item--green">Encontrado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="phone-mockup__label">Mapa Interativo</p>
+          </div>
+
+          <div class="phone-mockup">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen phone-mockup__screen--list">
+                <div class="mock-screen">
+                  <div class="mock-header mock-header--back">
+                    <span class="mock-back">←</span>
+                    <span>Todos os Pets</span>
+                  </div>
+                  <div class="mock-pet-card mock-pet-card--orange">
+                    <div class="mock-pet-thumb"></div>
+                    <div class="mock-pet-info">
+                      <strong>Rex</strong>
+                      <span>Labrador · Perdido</span>
+                      <span class="mock-pet-dist">2,3 km</span>
+                    </div>
+                  </div>
+                  <div class="mock-pet-card mock-pet-card--green">
+                    <div class="mock-pet-thumb mock-pet-thumb--2"></div>
+                    <div class="mock-pet-info">
+                      <strong>Mimi</strong>
+                      <span>Gato · Encontrado</span>
+                      <span class="mock-pet-dist">0,8 km</span>
+                    </div>
+                  </div>
+                  <div class="mock-pet-card mock-pet-card--orange">
+                    <div class="mock-pet-thumb mock-pet-thumb--3"></div>
+                    <div class="mock-pet-info">
+                      <strong>Bolinha</strong>
+                      <span>Poodle · Perdido</span>
+                      <span class="mock-pet-dist">4,1 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="phone-mockup__label">Listagem de Pets</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Dúvidas frequentes</span>
+          <h2 class="section-title">Perguntas e Respostas</h2>
+          <p class="section-desc">Tire suas dúvidas sobre o PetFinder antes de baixar.</p>
+        </div>
+        <div class="faq__list" role="list">
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <span>O app é gratuito?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 10l5 5 5-5H7z" fill="currentColor"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Sim! O PetFinder é 100% gratuito para download e uso. Acreditamos que ajudar um pet a voltar para casa não deve ter custo. Todos os recursos principais — registro, mapa e listagem — são gratuitos.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <span>Preciso criar uma conta para usar?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 10l5 5 5-5H7z" fill="currentColor"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Para visualizar os pets cadastrados, não é necessário criar conta. Porém, para registrar um pet perdido ou encontrado, é preciso criar um cadastro simples (nome, e-mail e senha). Isso garante que as informações sejam confiáveis e que você possa gerenciar seus registros.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <span>Como funciona o mapa?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 10l5 5 5-5H7z" fill="currentColor"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>O mapa exibe todos os pets registrados com marcadores coloridos: laranja para pets perdidos e verde para pets encontrados. Você pode navegar pelo mapa, aproximar a visualização da sua região e clicar em cada marcador para ver os detalhes e a foto do pet.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <span>Em quais cidades o app funciona?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 10l5 5 5-5H7z" fill="currentColor"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>O PetFinder funciona em todo o Brasil! O app usa geolocalização, então qualquer cidade onde houver usuários cadastrados já tem cobertura. Quanto mais pessoas usarem na sua cidade, mais eficiente a rede fica. Convide seus vizinhos!</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <span>Meus dados estão seguros?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 10l5 5 5-5H7z" fill="currentColor"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Sim. Utilizamos sessões seguras com tokens criptografados (tecnologia JWT) para proteger sua conta. Suas senhas nunca são armazenadas em texto puro. Seguimos as diretrizes da LGPD e você pode solicitar a exclusão dos seus dados a qualquer momento. Consulte nossa <a href="privacy.html">Política de Privacidade</a>.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <span>Como entro em contato com quem encontrou meu pet?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 10l5 5 5-5H7z" fill="currentColor"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Ao clicar em um registro de pet encontrado, você verá as informações de contato que o usuário optou por compartilhar (telefone ou e-mail). O contato é direto entre os usuários, sem intermediários, para agilizar o reencontro.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DOWNLOAD ========== -->
+    <section class="download" id="download">
+      <div class="container">
+        <div class="download__inner">
+          <div class="download__content">
+            <span class="section-tag section-tag--light">Em breve</span>
+            <h2 class="download__title">Seja um dos primeiros a usar</h2>
+            <p class="download__desc">O PetFinder está chegando na Google Play. Cadastre-se na lista de espera e seja notificado assim que o app estiver disponível para download.</p>
+            <a href="#" class="btn btn--play" aria-label="Disponível em breve na Google Play">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z" fill="currentColor"/></svg>
+              <div>
+                <small>Disponível em breve na</small>
+                <strong>Google Play</strong>
+              </div>
+            </a>
+          </div>
+          <div class="download__form-wrap">
+            <h3>Lista de espera</h3>
+            <p>Receba um aviso quando o app for lançado.</p>
+            <form class="waitlist-form" id="waitlistForm" novalidate>
+              <div class="form-group">
+                <label for="waitlist-name">Seu nome</label>
+                <input type="text" id="waitlist-name" name="name" placeholder="Como podemos te chamar?" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="waitlist-email">Seu e-mail</label>
+                <input type="email" id="waitlist-email" name="email" placeholder="seu@email.com" autocomplete="email" required />
+              </div>
+              <button type="submit" class="btn btn--orange btn--full">
+                Quero ser avisado!
+              </button>
+              <p class="form-note">Não enviamos spam. Apenas o aviso de lançamento.</p>
+            </form>
+            <div class="form-success" id="waitlistSuccess" hidden>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#4CAF50"/></svg>
+              <p>Ótimo! Você está na lista. Avisaremos assim que o app for lançado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="contato" id="contato">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Fale conosco</span>
+          <h2 class="section-title">Entre em Contato</h2>
+          <p class="section-desc">Tem dúvidas, sugestões ou quer colaborar com o projeto? Adoramos receber mensagens.</p>
+        </div>
+        <div class="contato__inner">
+          <div class="contato__info">
+            <div class="contato__item">
+              <div class="contato__item-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <strong>E-mail</strong>
+                <span>contato@petfinderapp.com.br</span>
+              </div>
+            </div>
+            <div class="contato__item">
+              <div class="contato__item-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <strong>Localização</strong>
+                <span>Brasil</span>
+              </div>
+            </div>
+            <div class="contato__social">
+              <a href="#" class="social-link" aria-label="Instagram do PetFinder">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook do PetFinder">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter do PetFinder">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Seu nome</label>
+              <input type="text" id="contact-name" name="name" placeholder="Nome completo" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Seu e-mail</label>
+              <input type="email" id="contact-email" name="email" placeholder="seu@email.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Mensagem</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--blue btn--full">Enviar Mensagem</button>
+            <p class="form-note">Respondemos em até 2 dias úteis.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="footer__logo" aria-label="PetFinder – Início">
+          <img src="assets/logo.svg" alt="PetFinder" width="32" height="32" loading="lazy" />
+          <span>PetFinder</span>
+        </a>
+        <p>Conectando pessoas para ajudar pets a voltarem para casa.</p>
+      </div>
+      <nav class="footer__links" aria-label="Links do rodapé">
+        <div class="footer__col">
+          <strong>App</strong>
+          <a href="#sobre">Sobre</a>
+          <a href="#como-funciona">Como Funciona</a>
+          <a href="#recursos">Recursos</a>
+          <a href="#download">Download</a>
+        </div>
+        <div class="footer__col">
+          <strong>Suporte</strong>
+          <a href="#faq">FAQ</a>
+          <a href="#contato">Contato</a>
+          <a href="privacy.html">Privacidade</a>
+          <a href="terms.html">Termos de Uso</a>
+        </div>
+        <div class="footer__col">
+          <strong>Redes Sociais</strong>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Twitter/X">Twitter / X</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 PetFinder. Todos os direitos reservados.</p>
+        <p>Feito com <span aria-label="amor">♥</span> para os pets do Brasil.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 14l5-5 5 5H7z" fill="currentColor"/></svg>
+  </button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
